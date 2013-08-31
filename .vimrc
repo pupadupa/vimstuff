@@ -138,3 +138,10 @@ map <F5> :!php -l %<CR>
 
 
 set pastetoggle=<F2>
+let g:sparkupNextMapping = '<c-c>'
+
+" ,l will add <li> tags (press ,l right after you use ctrl+v and select first letters of text )
+vmap ,l $S<li><CR>
+
+" :C  - clear last search higlight
+command C let @/=""
