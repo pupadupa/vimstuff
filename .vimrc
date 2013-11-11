@@ -145,3 +145,6 @@ vmap ,l $S<li><CR>
 
 " :C  - clear last search higlight
 command C let @/=""
+
+"higlight nginx conf:
+autocmd BufRead,BufNewFile /etc/nginx/sites-*/* setfiletype conf
